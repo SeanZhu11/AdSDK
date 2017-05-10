@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:background="@color/white"
+    android:id="@+id/ads_rela"
+    >
+
+        <ImageView
+            android:id="@+id/ads_list_iv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:scaleType="fitXY" />
+        <!--AppIcon-->
+        <ImageView
+            android:id="@+id/app_icon_av"
+            android:layout_width="@dimen/app_icon_size"
+            android:layout_height="@dimen/app_icon_size"
+            android:layout_below="@+id/ads_list_iv"
+            android:layout_marginEnd="@dimen/icon_margin"
+            android:layout_marginStart="@dimen/icon_margin"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/icon_margin"/>
+        <!--ads标题-->
+        <TextView
+            android:id="@+id/ads_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ads_list_iv"
+            android:layout_marginBottom="@dimen/info_margin"
+            android:layout_marginTop="@dimen/info_margin"
+            android:layout_toEndOf="@+id/app_icon_av"
+            android:layout_toStartOf="@+id/ads_action_tv"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            />
+        <!--评分显示的star-->
+        <com.example.sean.adssdk.view.widget.StarBar
+            android:id="@+id/ads_rating_star"
+            android:layout_width="@dimen/rating_star_size"
+            android:layout_height="@dimen/rating_star_size"
+            android:layout_below="@+id/ads_name_tv"
+            android:layout_marginBottom="@dimen/info_margin"
+            android:layout_toEndOf="@+id/app_icon_av"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="2dp"
+            ratingbar:starEmpty="@mipmap/rating_star_dark"
+            ratingbar:starFill="@mipmap/rating_star_light"
+            ratingbar:starSize="@dimen/rating_star_size" />
+        <!--下载信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_pic_size"
+            android:layout_below="@+id/ads_rating_star"
+            android:layout_toEndOf="@id/app_icon_av"
+            android:layout_toStartOf="@+id/ads_action_tv"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/SmallLogoStyle"
+                android:src="@mipmap/package_size" />
+
+            <TextView
+                android:id="@+id/package_size_tv"
+                style="@style/WallDownloadInfoTextStyle"
+                />
+
+            <ImageView
+                style="@style/SmallLogoStyle"
+                android:src="@mipmap/download_times" />
+
+            <TextView
+                android:id="@+id/ads_download_times_tv"
+                style="@style/WallDownloadInfoTextStyle"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ads_action_tv"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:background="@drawable/download_bt_bg"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ads_list_iv"
+            />
+        <TextView
+            android:id="@+id/ads_introduction_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/icon_margin"
+            android:paddingLeft="@dimen/icon_margin"
+            android:paddingRight="@dimen/icon_margin"
+            android:layout_below="@id/app_icon_av"
+            />
+
+</RelativeLayout>

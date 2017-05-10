@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/category_margin"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:id="@+id/two_button_category"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/two_button_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/two_button_green_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/two_button_logo_width"
+                android:layout_height="@dimen/two_button_logo_height"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/category"
+                android:textColor="@color/white"
+                android:textSize="@dimen/two_button_txt_size"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/two_button_list"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/two_button_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/two_button_orange_bg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_gravity="center">
+        <ImageView
+            android:layout_width="@dimen/two_button_logo_width"
+            android:layout_height="@dimen/two_button_logo_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+
+            />
+
+        <TextView
+            android:id="@+id/top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/list"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/two_button_txt_size" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

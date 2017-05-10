@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/grid_type_linear"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/grid_app_icon"
+        android:layout_width="@dimen/app_icon_size"
+        android:layout_height="@dimen/app_icon_size"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/grid_ads_title"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_pic_size"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            style="@style/SmallLogoStyle"
+            android:src="@mipmap/download_times" />
+
+        <TextView
+            android:id="@+id/grid_download_times_tv"
+            style="@style/GridDownloadInfoTextStyle"
+            />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/grid_action_tv"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/download_bt_bg"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:clickable="true"
+        />
+
+</LinearLayout>

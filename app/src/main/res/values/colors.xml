@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="ads_info_text_color">#cbcbcb</color>
+    <color name="download_bt_bg">#35b0fe</color>
+    <color name="gray_bg">#e1e2e5</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="viewpager_bg">#159ce7</color>
+    <color name="viewpager_unselected_color">#fcc9c5</color>
+    <color name="viewpager_selected_color">#ffffff</color>
+    <color name="matrix_color">#ffffff</color>
+
+
+    <!--分类按钮颜色-->
+    <color name="two_button_green">#FF8AC242</color>
+    <color name="two_button_orange">#FFF87329</color>
+
+    <color name="toolbar_bg">#159ce7</color>
+</resources>
